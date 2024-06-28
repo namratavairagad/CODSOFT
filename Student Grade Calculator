@@ -1,0 +1,38 @@
+//Task No. 2 - Student Grade Calculator
+import java.util.Scanner;
+class GradeCal
+{ 
+   public static void main(String args[])
+   {
+      Scanner sc = new Scanner(System.in);
+      int s1,s2,s3,total;
+      float percent;
+      System.out.println("Enter marks out of 100 in each Subject :");
+      s1 = sc.nextInt();
+      s2 = sc.nextInt();
+      s3 = sc.nextInt();
+      System.out.println("Marks of s1 = "+s1);
+      System.out.println("Marks of s2 = "+s2);
+      System.out.println("Marks of s3 = "+s3);
+      total = s1+s2+s3;
+      System.out.println("Total Marks = "+total);
+      percent = total / 3;
+      System.out.println("Average percentage = "+percent);
+      if(percent > 70)
+      {
+          System.out.println("Grade A");
+      }
+      else if(percent > 50 && percent < 70)
+      {
+          System.out.println("Grade B");
+      }
+      else if(percent >35 && percent <50) 
+      {
+          System.out.println("Grade C"); 
+      }
+      else
+      {
+          System.out.println("Fail");
+      }
+  }
+}
